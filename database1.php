@@ -10,9 +10,9 @@
     extract($_POST);
 
     // Database connection details
-    $serverNAME = 'localhost:3306';
+    $serverNAME = 'localhost';
     $dbUserName = 'root';
-    $dbPassword = 'admin';
+    $dbPassword = '12345678';
     $dbName = 'customers';
 
     // Establish database connection

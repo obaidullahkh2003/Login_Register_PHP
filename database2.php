@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost:3306";
+$servername = "localhost";
 $username = "root";  // Replace with your database username
-$password = "admin";  // Replace with your database password
+$password = "12345678";  // Replace with your database password
 $dbname = "masw_shopping";
 
 // Create connection
