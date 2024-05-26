@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MASW Shopping Website</title>
+    <script> 
+        function lettersAndSpaceCheck(name) {
+            var regEx = /^[a-zA-Z\s]*$/;
+            if (name.value.match(regEx)) {
+                return true;
+            } else {
+                alert("Please enter letters and space only.");
+                return false;
+            }
+        }
+        function digitsCheck(credit) {
+            var regEx = /^[0-9]*$/;
+            if (credit.value.match(regEx)) {
+                return true;
+            } else {
+                alert("Please enter digits only.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 class="lo5"><p class="lo6">Create an Account</p></h2>
+    <form name="form1" class="create-account-form" action="database2.php" method="POST">
+        <label>Full Name:</label>
+        <input type="text" name="name" required />
+        <label>Username:</label>
+        <input type="text" name="username" required />
+        <label>Email:</label>
+        <input type="email" name="email" required />
+        <label>Password:</label>
+        <input type="password" id="password" name="password" required />
+        <label>Credit Card Number:</label>
+        <input type="text" name="credit" required />
+        <input type="submit" value="Create Account" onclick="return lettersAndSpaceCheck(document.form1.name) && digitsCheck(document.form1.credit);" />
+    </form>
+</body>
+</html>

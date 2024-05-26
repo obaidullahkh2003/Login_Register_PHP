@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+    <style>
+        th {
+            background-color: #ddd;
+        }
+        td {
+            border: 1px solid #ccc;
+        }
+        div {
+            position: relative;
+            width: 700px;
+            height: 700px;
+            margin: auto;
+        }
+        table {
+            position: absolute;
+            margin: 20px auto;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="database1.php" method="POST">
+            <label>Enter your ID again:
+            <input type="text" name="id"></label>
+            <table border="1">
+                <tr>
+                    <th colspan="3">Welcome to AlRadiadeh Shopping MASW choose the products you want and press buy</th>
+                </tr>
+                <tr>
+                    <td><img class="phot" src="1.jpg" alt="Keyboard" /> <p>Keyboard</p> <p>10.00 JD</p> <input type="number" min="0" name="Key"></td>
+                    <td><img class="phot" src="2.jpg" alt="Mouse" /><p>Mouse</p> <p>8.00 JD</p> <input type="number" min="0" name="mou"></td>
+                    <td><img class="phot" src="3.jpg" alt="HeadSet" /><br><p>HeadSet</p> <p>20.00 JD</p> <input type="number" min="0" name="hea"></td>
+                </tr>
+                <tr>
+                    <td><img class="phot" src="4.jpg" alt="MouseBad" /><p>MouseBad</p> <p>5 JD</p> <input type="number" min="0" name="mob"></td>
+                    <td><img class="phot" src="5.jpg" alt="Controller" /><p>Controller</p> <p>18.00 JD</p> <input type="number" min="0" name="con"></td>
+                    <td><img class="phot" src="6.jpg" alt="Microphone" /><p>Microphone</p> <p>15.00 JD</p> <input type="number" min="0" name="pho"></td>
+                </tr>
+                <tr>
+                    <th colspan="3"><input type="submit" value="Press to buy"></th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
